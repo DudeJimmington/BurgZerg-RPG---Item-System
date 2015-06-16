@@ -17,9 +17,6 @@ namespace RPGModules.ItemSystem
         //THESE GOTO OTHER ITEM INTERFACES
         //equip
         //questItem flag
-        //durability
-        //takedamage
-        //prefabs
     }
 }
 

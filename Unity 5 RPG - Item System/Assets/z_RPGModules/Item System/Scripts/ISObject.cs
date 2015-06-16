@@ -5,6 +5,7 @@ using System.Collections;
 
 namespace RPGModules.ItemSystem
 {
+    [System.Serializable]
     public class ISObject : IISObject
     {
         [SerializeField]string _name;
