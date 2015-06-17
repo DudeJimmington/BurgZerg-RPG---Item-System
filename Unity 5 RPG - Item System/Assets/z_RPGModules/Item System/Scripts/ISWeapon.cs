@@ -133,7 +133,7 @@ namespace RPGModules.ItemSystem
 
         public void DisplayPrefab()
         {
-            GUILayout.Label("Prefab");
+            _prefab = EditorGUILayout.ObjectField("Prefab", _prefab, typeof(GameObject), false) as GameObject;
         }
 
     }
