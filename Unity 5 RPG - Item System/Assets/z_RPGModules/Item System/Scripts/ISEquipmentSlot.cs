@@ -9,6 +9,11 @@ namespace RPGModules.ItemSystem
         [SerializeField] Sprite _icon;
 
 
+        public ISEquipmentSlot()
+        {
+            _name = "Name Me";
+            _icon = new Sprite();
+        }
 
         public string Name
         {
