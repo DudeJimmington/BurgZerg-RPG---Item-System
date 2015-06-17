@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   database:
   - _name: Rare
-    _icon: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    _icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   - _name: Cool
     _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   - _name: Brill
@@ -21,4 +21,4 @@ MonoBehaviour:
   - _name: Amazeballs
     _icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   - _name: Legendary
-    _icon: {fileID: 0}
+    _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}

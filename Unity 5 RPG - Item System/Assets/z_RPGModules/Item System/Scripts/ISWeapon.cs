@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 using System.Collections;
 
 
@@ -18,7 +19,6 @@ namespace RPGModules.ItemSystem
         public ISWeapon()
         {
             _equipmentSlot = new ISEquipmentSlot();
-            _prefab = new GameObject();
         }
 
 
@@ -107,5 +107,34 @@ namespace RPGModules.ItemSystem
         {
             get { return _prefab; }
         }
+
+
+
+
+        //this code will go into a new script later
+
+        public override void OnGUI()
+        {
+            base.OnGUI();
+
+            _minDamage = System.Convert.ToInt32(EditorGUILayout.TextField("Min Damage: ", _minDamage.ToString()));
+            _durability = System.Convert.ToInt32(EditorGUILayout.TextField("Durability: ", _durability.ToString()));
+            _maxDurability = System.Convert.ToInt32(EditorGUILayout.TextField("Max Durability: ", _maxDurability.ToString()));
+            DisplayEquipmentSlot();
+            DisplayPrefab();
+
+        }
+
+
+        public void DisplayEquipmentSlot()
+        {
+            GUILayout.Label("Equipment Slot");
+        }
+
+        public void DisplayPrefab()
+        {
+            GUILayout.Label("Prefab");
+        }
+
     }
 }

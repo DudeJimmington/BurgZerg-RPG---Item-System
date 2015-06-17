@@ -8,6 +8,14 @@ namespace RPGModules.ItemSystem.Editor
 {
     public partial class ISObjectEditor : EditorWindow
     {
+        ISWeaponDatabase database;
+
+        const string DATABASE_NAME = @"RPGWeaponDatabase.asset";
+        const string DATABASE_PATH = @"Database";
+        const string DATABASE_FULL_PATH = @"Assets/" + DATABASE_PATH + "/" + DATABASE_NAME;
+
+
+
         [MenuItem("RPG/Database/Item System Editor %#i")]
         public static void Init()
         {
@@ -21,7 +29,8 @@ namespace RPGModules.ItemSystem.Editor
 
         void OnEnable()
         {
-
+            if (database == null)
+                database = ISWeaponDatabase.GetDatabase<ISWeaponDatabase>(DATABASE_PATH, DATABASE_NAME);
         }
 
 

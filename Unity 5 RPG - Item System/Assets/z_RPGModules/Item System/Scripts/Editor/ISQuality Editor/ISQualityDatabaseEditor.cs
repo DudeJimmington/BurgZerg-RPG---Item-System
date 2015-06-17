@@ -17,7 +17,7 @@ namespace RPGModules.ItemSystem.Editor
         const int SPRITE_BUTTON_SIZE = 46;
         const string DATABASE_NAME = @"RPGQualityDatabase.asset";
         const string DATABASE_PATH = @"Database";
-        const string DATABASE_FULL_PATH = @"Assets/" + DATABASE_PATH + "/" + DATABASE_NAME;
+        //const string DATABASE_FULL_PATH = @"Assets/" + DATABASE_PATH + "/" + DATABASE_NAME;
 
 
 
@@ -34,8 +34,8 @@ namespace RPGModules.ItemSystem.Editor
 
         void OnEnable()
         {
-            qualityDatabase = ScriptableObject.CreateInstance<ISQualityDatabase>();
-            qualityDatabase = qualityDatabase.GetDatabase<ISQualityDatabase>(DATABASE_PATH, DATABASE_NAME);
+            if(qualityDatabase==null)
+                qualityDatabase = ISQualityDatabase.GetDatabase<ISQualityDatabase>(DATABASE_PATH, DATABASE_NAME);
         }
 
 
