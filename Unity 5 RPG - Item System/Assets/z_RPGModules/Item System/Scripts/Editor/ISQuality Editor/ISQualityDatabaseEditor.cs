@@ -2,6 +2,8 @@
 using UnityEngine;
 using System.Collections;
 
+
+
 namespace RPGModules.ItemSystem.Editor
 {
     public partial class ISQualityDatabaseEditor : EditorWindow
@@ -19,7 +21,7 @@ namespace RPGModules.ItemSystem.Editor
 
 
 
-        [MenuItem("RPG/Database/Quality Editor %#i")]
+        [MenuItem("RPG/Database/Quality Editor %#w")]
         public static void Init()
         {
             ISQualityDatabaseEditor window = EditorWindow.GetWindow<ISQualityDatabaseEditor>();
