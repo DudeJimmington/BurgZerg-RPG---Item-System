@@ -23,3 +23,28 @@ MonoBehaviour:
     _durability: 0
     _maxDurability: 0
     _prefab: {fileID: 0}
+    equipmentSlot: 0
+  - _name: BumPlug The Indeadinator
+    _value: 2
+    _icon: {fileID: 0}
+    _burden: 4
+    _quality:
+      _name: Rare
+      _icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+    _minDamage: 1
+    _durability: 1
+    _maxDurability: 1
+    _prefab: {fileID: 100118, guid: 724f1e1f6685bfb4fa4571638ec4521c, type: 2}
+    equipmentSlot: 0
+  - _name: Badger
+    _value: 0
+    _icon: {fileID: 0}
+    _burden: 0
+    _quality:
+      _name: Rare
+      _icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+    _minDamage: 0
+    _durability: 0
+    _maxDurability: 0
+    _prefab: {fileID: 0}
+    equipmentSlot: 4

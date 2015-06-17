@@ -6,7 +6,7 @@ using System.Collections;
 namespace RPGModules.ItemSystem
 {
     [System.Serializable]
-    public class ISWeapon : ISObject, IISWeapon, IISDestructable, IISEquippable, IISGameObject
+    public class ISWeapon : ISObject, IISWeapon, IISDestructable, IISGameObject
     {
         [SerializeField] int _minDamage;
         [SerializeField] int _durability;
@@ -14,7 +14,7 @@ namespace RPGModules.ItemSystem
         [SerializeField] ISEquipmentSlot _equipmentSlot;
         [SerializeField] GameObject _prefab;
 
-
+        public EquipmentSlot equipmentSlot;
 
         public ISWeapon()
         {
@@ -96,13 +96,6 @@ namespace RPGModules.ItemSystem
 
 
 
-        public bool Equip()
-        {
-            throw new System.NotImplementedException();
-        }
-
-
-
         public GameObject Prefab
         {
             get { return _prefab; }
@@ -128,7 +121,7 @@ namespace RPGModules.ItemSystem
 
         public void DisplayEquipmentSlot()
         {
-            GUILayout.Label("Equipment Slot");
+            equipmentSlot = (EquipmentSlot)EditorGUILayout.EnumPopup("Equipment Slot", equipmentSlot);
         }
 
         public void DisplayPrefab()

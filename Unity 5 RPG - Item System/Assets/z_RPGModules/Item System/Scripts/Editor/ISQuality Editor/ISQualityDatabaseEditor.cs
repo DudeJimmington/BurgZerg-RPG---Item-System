@@ -26,7 +26,7 @@ namespace RPGModules.ItemSystem.Editor
         {
             ISQualityDatabaseEditor window = EditorWindow.GetWindow<ISQualityDatabaseEditor>();
             window.minSize = new Vector2(400, 300);
-            window.title = "Quality DB";
+            window.titleContent.text = "Quality DB";
             window.Show();
         }
 
