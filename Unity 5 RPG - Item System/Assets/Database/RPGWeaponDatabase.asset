@@ -48,3 +48,15 @@ MonoBehaviour:
     _maxDurability: 0
     _prefab: {fileID: 0}
     equipmentSlot: 4
+  - _name: 
+    _value: 0
+    _icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+    _burden: 0
+    _quality:
+      _name: Rare
+      _icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+    _minDamage: 0
+    _durability: 0
+    _maxDurability: 0
+    _prefab: {fileID: 0}
+    equipmentSlot: 0

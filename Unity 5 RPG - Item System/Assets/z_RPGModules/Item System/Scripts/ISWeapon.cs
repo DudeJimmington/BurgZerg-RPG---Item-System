@@ -129,5 +129,6 @@ namespace RPGModules.ItemSystem
             _prefab = EditorGUILayout.ObjectField("Prefab", _prefab, typeof(GameObject), false) as GameObject;
         }
 
+
     }
 }

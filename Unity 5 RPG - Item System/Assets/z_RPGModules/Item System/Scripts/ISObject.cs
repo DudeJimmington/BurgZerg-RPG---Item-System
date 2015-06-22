@@ -71,7 +71,7 @@ namespace RPGModules.ItemSystem
 
         public void DisplayIcon()
         {
-            GUILayout.Label("Icon");
+            _icon = EditorGUILayout.ObjectField("Icon", _icon, typeof(Sprite), false) as Sprite;
         }
 
         public int SelectedQualityID 
@@ -99,6 +99,11 @@ namespace RPGModules.ItemSystem
             qualitySelectedIndex = EditorGUILayout.Popup("Quality", qualitySelectedIndex,option );
             _quality = qdb.Get(SelectedQualityID);
         }
+
+
+        //To be moved to the editor version of this class
+
+
 
     }
 }
